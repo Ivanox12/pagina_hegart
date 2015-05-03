@@ -230,6 +230,14 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fec503;
 }
 
+.tel{
+    background-color: #fed136;
+    font-size: 1em;
+    font-family: Helvetica;
+    width: 300px;
+
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -348,6 +356,8 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    background-color: #76BAF6;
+
 }
 
 #portfolio .portfolio-item {
@@ -431,6 +441,7 @@ section h3.section-subheading {
     position: relative;
     padding: 0;
     list-style: none;
+    background-color: #fff;
 }
 
 .timeline:before {
@@ -652,7 +663,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #76BAF6;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;

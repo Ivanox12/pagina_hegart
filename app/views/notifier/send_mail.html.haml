@@ -1,0 +1,13 @@
+%h2 Hola Hector
+
+%h5 #{@name} te envió una solicitud de contacto.
+
+%h5 Resumen de contacto
+%ul
+	%li= @name
+	- if @phone_number.present?
+		%li= @phone_number
+	%li= @email
+
+%h4 Mensaje
+%p= @message

@@ -1,6 +1,6 @@
-class Notifier < ApplicationMailer::Base
+class Notifier < ActionMailer::Base
 	layout 'notifier'
-	default from: "Memoree <notificaciones@memoree.mx>"
+	default from: "from@example.com"
 	def send_mail(contact_request)
 		@contact_request = contact_request
 		@name = contact_request.name

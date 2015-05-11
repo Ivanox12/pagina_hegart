@@ -5,6 +5,6 @@ class ContactRequest < ActiveRecord::Base
 
 	private 
 	def send_email
-		Notifier.send_mail(self).deliver
+		Notifier.send_mail(self).deliver_now
 	end
 end

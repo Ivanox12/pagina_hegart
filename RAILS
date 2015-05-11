@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------------
+Thank you for using DigitalOcean's Rails Application.
+We have created a default Rails application that can be seen from http://104.236.27.163/
+-------------------------------------------------------------------------------------
+You can use the following SFTP credentials to upload your webpages (using FileZilla/WinSCP/Rsync):
+Host: 104.236.27.163
+User: rails
+Pass: 1mDca8cOYn
+-------------------------------------------------------------------------------------
+These instructions are stored in /root/RAILS for your review.
+You can use the following MySQL database credentials:
+DB: rails
+User: rails
+Pass: 1avKEW4mCb
+If you require root database credentials, they are in /root/.my.cnf
+-------------------------------------------------------------------------------------
+Nginx listens on public IP (104.236.27.163) port 80 and forwards requests to Unicorn on port 8080
+Nginx access log is in /var/log/nginx/access.log and error log is in /var/log/nginx/error.log
+Unicorn configuration files are in /home/unicorn/unicorn.conf and /etc/default/unicorn
+Unicorn log is in /home/unicorn/log/unicorn.log
+-------------------------------------------------------------------------------------
+To get a list of available gems: gem list
+To get a list of Rubies: rvm list
+To get Gem environment: gem env
+-------------------------------------------------------------------------------------

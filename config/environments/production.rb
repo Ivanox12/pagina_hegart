@@ -24,6 +24,16 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
  
+  #Mailgun configuration
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :port           => 587,
+    :address        => "smtp.mailgun.org",
+    :user_name      => 'postmaster@sandbox5ef57fb0f0df4a1183ca45860ddacc7c.mailgun.org',
+    :password       => '4acfc86a1ea685b05eb73159abbfda94',
+    :domain         => 'sandbox5ef57fb0f0df4a1183ca45860ddacc7c.mailgun.org',
+    :authentication => 'plain',
+  }
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier

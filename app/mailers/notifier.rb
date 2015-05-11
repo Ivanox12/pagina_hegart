@@ -9,6 +9,6 @@ class Notifier < ActionMailer::Base
 		if contact_request.phone_number.present?
 			@phone_number = contact_request.phone_number
 		end
-		mail(to: "ivan.quevedo.garcia@gmail.com", subject: "Solicitud de contacto de #{contact_request.name}")
+		mail(to: "hector@hegart.com", subject: "Solicitud de contacto de #{contact_request.name}")
 	end
 end
